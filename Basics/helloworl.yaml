@@ -1,5 +1,5 @@
 ---
-- hosts: hosts
+- hosts: ip
   gather_facts: no
   taks:
   - name: ping all machines
