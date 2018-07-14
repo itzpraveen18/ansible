@@ -1,0 +1,11 @@
+---
+- hosts: webserver
+  become: yes # this used for sudo user in node 
+  tasks: 
+  - name: update packegaes 
+    apt:
+      update_cache: yes  #giving apt info here 
+  -name: installing the apache 
+   apt:
+     name:apache2
+     state:present
