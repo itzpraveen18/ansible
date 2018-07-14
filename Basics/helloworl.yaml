@@ -1,6 +1,6 @@
 ---
 - hosts: hosts
-  gather_facts: no
+  gather_facts: False
   taks:
   - name: ping all machines
     ping: 
